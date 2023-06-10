@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
             }
        
             //Debug win/loss triggers [REMOVE BEFORE SHIPPING!!!]
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.O))
             {
                 Win();
             }
