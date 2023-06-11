@@ -6,16 +6,17 @@ public class Nucleus : MonoBehaviour
 {
     GameManager gm;
     float speed;
+    float startTime;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        gm = FindObjectOfType<GameManager>();
     }
 
     private void OnEnable()
     {
-        gm = FindObjectOfType<GameManager>();
+        // This game is a win when the timer runs out
+        gm.loseOnTimer = false;
 
         // Randomly choose whether the nucleus starts on the top or the bottom
         int startPosition = Random.Range(0, 2);
@@ -27,15 +28,15 @@ public class Nucleus : MonoBehaviour
 
 
         // Set speed of nucleus proportional to time limit
-        speed = 9f / gm.time * Time.fixedDeltaTime;
+        speed = 20f / gm.time * Time.fixedDeltaTime;
     }
 
     private void FixedUpdate()
     {
         transform.position += new Vector3(speed, 0, 0);
 
-        if (transform.position.x >= 4)
-            gm.Win();
+        if (transform.position.x > 4 || transform.position.x < -4)
+            speed *= -1;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

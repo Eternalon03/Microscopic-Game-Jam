@@ -14,7 +14,6 @@ public class DNAGame : MonoBehaviour
             g.SetActive(false);
         }
         player = transform.Find("Player Cell").gameObject;
-
     }
 
     public GameObject[] DNAgameObjects;
@@ -45,9 +44,10 @@ public class DNAGame : MonoBehaviour
     
     private void OnEnable()
     {
+        gm.loseOnTimer = true;
+
         PickLevel();
         player.transform.position = DNAgameObjects[currentIndex].transform.Find("Spawn").gameObject.transform.position;
-
     }
 
     public void Win() {

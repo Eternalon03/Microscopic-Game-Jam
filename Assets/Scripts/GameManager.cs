@@ -44,6 +44,10 @@ public class GameManager : MonoBehaviour
     //The timer slider object
     Slider timer;
 
+    //determines whether timer running out is a win or a loss
+    // every game needs to set it to true or false
+    public bool loseOnTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,7 +91,10 @@ public class GameManager : MonoBehaviour
             timer.value = time - (Time.time - lastReset);
             //If timer goes zero or below, end game
             if (time - (Time.time - lastReset) <= 0) {
-                Loss();
+                if (loseOnTimer)
+                    Loss();
+                else
+                    Win();
             }
        
             //Debug win/loss triggers [REMOVE BEFORE SHIPPING!!!]
