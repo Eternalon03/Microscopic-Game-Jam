@@ -8,7 +8,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     //Score (how many levels beaten)
-    int score = 0;
+    public int score = 0;
     //Grades (how many lives left. Reach F = Game Over)
     string[] grades = { "A", "B", "C", "D", "F"};
     int gradeIndex = 0;
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     //These are used for counting down the timer
     //The current time limit
-    float time;
+    public float time;
     //The time (in seconds since start of program) of the last clock reset
     float lastReset;
     //Maximum time for a microgame to take
