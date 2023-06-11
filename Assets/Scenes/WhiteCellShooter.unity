@@ -135,9 +135,10 @@ GameObject:
   - component: {fileID: 112368423}
   - component: {fileID: 112368422}
   - component: {fileID: 112368421}
-  m_Layer: 0
+  - component: {fileID: 112368424}
+  m_Layer: 6
   m_Name: Virus (2)
-  m_TagString: Untagged
+  m_TagString: Virus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,6 +251,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &112368424
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112368419}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &133179863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8705541837654180550, guid: ed6df54813f7c0948a936a3dead1bca6, type: 3}
@@ -351,9 +373,10 @@ GameObject:
   - component: {fileID: 306015705}
   - component: {fileID: 306015704}
   - component: {fileID: 306015703}
-  m_Layer: 0
+  - component: {fileID: 306015706}
+  m_Layer: 6
   m_Name: Virus (4)
-  m_TagString: Untagged
+  m_TagString: Virus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -466,6 +489,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &306015706
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306015701}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &352404775 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8095199832608491057, guid: 85cf6c1990ce1264397bb51c505cb058, type: 3}
@@ -639,6 +683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223281238}
   - component: {fileID: 1223281239}
+  - component: {fileID: 1223281240}
   m_Layer: 0
   m_Name: WhiteCellShooter
   m_TagString: Untagged
@@ -680,6 +725,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1532914358}
+--- !u!114 &1223281240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223281237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb4b7047164946ffb3b1e1ca9830357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viruses:
+  - {fileID: 1359528725}
+  - {fileID: 112368419}
+  - {fileID: 1835627541}
+  - {fileID: 306015701}
 --- !u!1 &1267035002
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,9 +845,10 @@ GameObject:
   - component: {fileID: 1359528729}
   - component: {fileID: 1359528728}
   - component: {fileID: 1359528727}
-  m_Layer: 0
+  - component: {fileID: 1359528730}
+  m_Layer: 6
   m_Name: Virus (1)
-  m_TagString: Untagged
+  m_TagString: Virus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -898,6 +961,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1359528730
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359528725}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1372212721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,7 +1135,7 @@ GameObject:
   - component: {fileID: 1532914364}
   - component: {fileID: 1532914363}
   - component: {fileID: 1532914366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1065,7 +1149,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532914358}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1197,6 +1281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30bfcc5da7ceec44fb7e5a5feef589a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  virusesLeft: 0
   bulletPrefab: {fileID: 3009839108461947779, guid: fc1e6ed18de09a544aca3adb97b13d8f, type: 3}
   player: {fileID: 1532914358}
 --- !u!1 &1835627541
@@ -1211,9 +1296,10 @@ GameObject:
   - component: {fileID: 1835627545}
   - component: {fileID: 1835627544}
   - component: {fileID: 1835627543}
-  m_Layer: 0
+  - component: {fileID: 1835627546}
+  m_Layer: 6
   m_Name: Virus (3)
-  m_TagString: Untagged
+  m_TagString: Virus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1326,6 +1412,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1835627546
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835627541}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1908592444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,7 +1527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070022746}
   - component: {fileID: 2070022747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
