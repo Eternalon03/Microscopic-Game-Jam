@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Nucleus : MonoBehaviour
 {
     GameManager gm;
     float speed;
     float startTime;
+    public TextMeshProUGUI label;
 
     private void Awake()
     {
@@ -29,6 +31,9 @@ public class Nucleus : MonoBehaviour
 
         // Set speed of nucleus proportional to time limit
         speed = 20f / gm.time * Time.fixedDeltaTime;
+
+        // Set label
+        label.text = "Dodge the Nucleus Bomb!";
     }
 
     private void FixedUpdate()
