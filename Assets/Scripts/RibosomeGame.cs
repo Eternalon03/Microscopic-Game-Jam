@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class RibosomeGame : MonoBehaviour
 {
@@ -15,7 +16,9 @@ public class RibosomeGame : MonoBehaviour
 
     GameObject obj;
 
-    private void Start()
+    public TextMeshProUGUI label;
+
+    private void Awake()
     {
         spawnPoint = transform.Find("Game Obj/Spawn Point");
         player = transform.Find("Player Cell").gameObject;
@@ -57,5 +60,6 @@ public class RibosomeGame : MonoBehaviour
         spawnPoint = spawns[spawnNum];
         obj.transform.localPosition = new Vector3(0, startPositions[spawnNum], 0);
         player.transform.position = spawnPoint.position;
+        label.text = "Don't hit the endoplasmic reticulum!";
     }
 }

@@ -7,8 +7,8 @@ public class Nucleus : MonoBehaviour
 {
     GameManager gm;
     float speed;
-    float startTime;
     public TextMeshProUGUI label;
+    public GameObject player;
 
     private void Awake()
     {
@@ -34,6 +34,8 @@ public class Nucleus : MonoBehaviour
 
         // Set label
         label.text = "Dodge the Nucleus Bomb!";
+
+        player.transform.position = new Vector3(4, -1, 0);
     }
 
     private void FixedUpdate()
