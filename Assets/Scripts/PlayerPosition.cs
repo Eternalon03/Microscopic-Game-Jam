@@ -18,6 +18,5 @@ public class PlayerPosition : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.position = new Vector3(5, -1.01f, 0);
     }
 }

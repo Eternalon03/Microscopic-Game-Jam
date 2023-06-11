@@ -6,6 +6,8 @@ using TMPro;
 public class Nucleus : MonoBehaviour
 {
     GameManager gm;
+
+    public GameObject player;
     float speed;
     float startTime;
     public TextMeshProUGUI label;
@@ -19,6 +21,8 @@ public class Nucleus : MonoBehaviour
     {
         // This game is a win when the timer runs out
         gm.loseOnTimer = false;
+
+        player.transform.position = new Vector3(5, -1.01f, 0);
 
         // Randomly choose whether the nucleus starts on the top or the bottom
         int startPosition = Random.Range(0, 2);
